@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Amar Kumar
+N:Kumar;Amar;;;
+EMAIL;TYPE=INTERNET:amarkumar62156@gmail.com
+TEL;TYPE=CELL:+919199320433
+ADR;TYPE=HOME:;;Motihari;Bihar;;;India
+TITLE:Software Developer
+URL:https://www.linkedin.com/
+NOTE:Computer Science Engineering student skilled in Java, Spring Boot, MERN, Python, MySQL, and frontend development.
+END:VCARD

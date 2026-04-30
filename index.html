@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amar Kumar | Advanced Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Advanced portfolio of Amar Kumar, Computer Science Engineering student and software developer skilled in Java full stack, MERN, Python, and machine learning."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Amar Kumar home">
+        <span>AK</span>
+        <strong>Amar Kumar</strong>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#journey">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="commandButton" type="button" aria-label="Open command palette">K</button>
+        <button class="icon-button" id="paletteButton" type="button" aria-label="Change color palette">P</button>
+        <button class="icon-button" id="recruiterMode" type="button" aria-label="Toggle recruiter mode">R</button>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme">T</button>
+      </div>
+      <div class="palette-menu" id="paletteMenu" aria-label="Color palette options">
+        <button type="button" data-palette="teal">Teal</button>
+        <button type="button" data-palette="violet">Violet</button>
+        <button type="button" data-palette="rose">Rose</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Developer Portfolio</p>
+          <div class="hero-badges" aria-label="Portfolio highlights">
+            <span>Java Full Stack</span>
+            <span>MERN Developer</span>
+            <span>ML Explorer</span>
+          </div>
+          <h1>
+            Hi, I am Amar Kumar.
+            <span class="typing-line">I build <span id="typeText"></span><span class="typing-cursor"></span></span>
+          </h1>
+          <p class="hero-text">
+            Computer Science & Engineering student at Chandigarh University with hands-on work in
+            Java, Spring Boot, REST APIs, MERN, Python, MySQL, and modern frontend development.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button primary"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=amarkumar62156@gmail.com&su=Portfolio%20Contact%20-%20Amar%20Kumar"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Hire / Contact
+            </a>
+            <a class="button secondary" href="#work">Explore Work</a>
+            <a class="button secondary" href="amar-kumar-contact.vcf" download>Save Contact</a>
+            <button class="button ghost" id="printResume" type="button">Print Resume</button>
+          </div>
+          <div class="signal-grid">
+            <div>
+              <span>Current</span>
+              <strong>B.E. CSE</strong>
+              <p>2023 - 2027</p>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong>Full Stack</strong>
+              <p>Java + MERN</p>
+            </div>
+            <div>
+              <span>Location</span>
+              <strong>Motihari</strong>
+              <p>Bihar, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-lab">
+          <div class="portrait-shell">
+            <div class="orbit-ring" aria-hidden="true"></div>
+            <div class="orbit-dot one" aria-hidden="true"></div>
+            <div class="orbit-dot two" aria-hidden="true"></div>
+            <img src="assets/amar-kumar.jpg" alt="Portrait of Amar Kumar" />
+            <div class="availability">
+              <span></span>
+              Open to internships
+            </div>
+          </div>
+          <div class="terminal-card" aria-label="Developer profile summary">
+            <div class="terminal-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <pre><code>const amar = {
+  role: "Software Developer",
+  stack: ["Java", "Spring Boot", "MERN"],
+  mindset: "Build, test, improve",
+  availableFor: "Internships"
+};</code></pre>
+          </div>
+          <div class="hero-mini-panel">
+            <div>
+              <strong>Response</strong>
+              <span>Fast learner</span>
+            </div>
+            <div>
+              <strong>Workflow</strong>
+              <span>Build + improve</span>
+            </div>
+          </div>
+          <div class="availability-board">
+            <div>
+              <span class="pulse-dot"></span>
+              <strong>Internship Ready</strong>
+            </div>
+            <p>Best fit: Java backend, full-stack web, frontend development, and ML prototype roles.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section snapshot-section" aria-label="Recruiter profile snapshot">
+        <div class="snapshot-panel">
+          <div>
+            <p class="section-kicker">90-Second Snapshot</p>
+            <h2>Full-stack learner with project proof and internship readiness.</h2>
+            <p>
+              Strongest fit for roles involving Java backend, responsive web interfaces, student/admin
+              systems, MERN applications, and Python-based ML prototypes.
+            </p>
+          </div>
+          <div class="strength-rings" aria-label="Profile strengths">
+            <div class="ring" style="--value: 82">
+              <strong>82</strong>
+              <span>Backend</span>
+            </div>
+            <div class="ring" style="--value: 86">
+              <strong>86</strong>
+              <span>Frontend</span>
+            </div>
+            <div class="ring" style="--value: 74">
+              <strong>74</strong>
+              <span>Full Stack</span>
+            </div>
+          </div>
+        </div>
+        <div class="snapshot-actions">
+          <a href="#work">Review Projects</a>
+          <a href="#stack">Check Skills</a>
+          <a href="#contact">Contact Amar</a>
+        </div>
+      </section>
+
+      <section class="marquee-band" aria-label="Technology highlights">
+        <div class="marquee-track">
+          <span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>React</span>
+          <span>Node.js</span><span>MongoDB</span><span>MySQL</span><span>Python</span>
+          <span>Machine Learning</span><span>GitHub</span><span>Google Colab</span>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services">
+        <div class="section-heading split">
+          <div>
+            <p class="section-kicker">What I Build</p>
+            <h2>Practical developer services with project-ready execution.</h2>
+          </div>
+          <a class="button secondary" href="#contact">Start A Conversation</a>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <span>01</span>
+            <h3>Java Backend Systems</h3>
+            <p>Spring Boot APIs, database workflows, authentication, CRUD modules, and admin dashboards.</p>
+          </article>
+          <article class="service-card">
+            <span>02</span>
+            <h3>Modern Web Interfaces</h3>
+            <p>Responsive HTML, CSS, JavaScript, and React interfaces focused on clean user flows.</p>
+          </article>
+          <article class="service-card">
+            <span>03</span>
+            <h3>MERN Applications</h3>
+            <p>Full-stack apps with MongoDB, Express.js, React, Node.js, auth, cart, and order logic.</p>
+          </article>
+          <article class="service-card">
+            <span>04</span>
+            <h3>ML Prototypes</h3>
+            <p>Python notebooks, data preparation, model experiments, visualizations, and Colab demos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="section-heading split">
+          <div>
+            <p class="section-kicker">Engineering Process</p>
+            <h2>How I turn an idea into a working software build.</h2>
+          </div>
+          <div class="process-tabs" aria-label="Engineering process tabs">
+            <button class="active" type="button" data-process="plan">Plan</button>
+            <button type="button" data-process="build">Build</button>
+            <button type="button" data-process="test">Test</button>
+            <button type="button" data-process="deploy">Deploy</button>
+          </div>
+        </div>
+        <div class="process-board">
+          <div class="process-stage-list">
+            <span class="active" data-stage-dot="plan">01</span>
+            <span data-stage-dot="build">02</span>
+            <span data-stage-dot="test">03</span>
+            <span data-stage-dot="deploy">04</span>
+          </div>
+          <article class="process-detail" id="processDetail">
+            <p class="section-kicker">Plan</p>
+            <h3>Understand the user, data, and main workflow first.</h3>
+            <p>
+              I break the requirement into screens, APIs, database entities, and user actions before
+              writing code, so the build has a clear direction.
+            </p>
+            <ul>
+              <li>Define core user flow</li>
+              <li>Choose stack and database structure</li>
+              <li>Split work into small deliverable modules</li>
+            </ul>
+          </article>
+          <div class="process-diagram" aria-hidden="true">
+            <span>User</span>
+            <span>UI</span>
+            <span>API</span>
+            <span>Database</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section console-section" id="console">
+        <div class="section-heading split">
+          <div>
+            <p class="section-kicker">Developer Console</p>
+            <h2>Explore my profile like a command-line interface.</h2>
+          </div>
+          <div class="console-actions" aria-label="Console commands">
+            <button class="active" type="button" data-console="profile">profile</button>
+            <button type="button" data-console="skills">skills</button>
+            <button type="button" data-console="projects">projects</button>
+            <button type="button" data-console="contact">contact</button>
+          </div>
+        </div>
+        <div class="console-window">
+          <div class="console-top">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>amar@portfolio</strong>
+          </div>
+          <pre id="consoleOutput"><code>$ amar profile
+Name: Amar Kumar
+Role: Software Developer
+Education: B.E. CSE, Chandigarh University
+Focus: Java Full Stack, MERN, Frontend, ML Basics
+Status: Open to internships and collaborations</code></pre>
+        </div>
+      </section>
+
+      <section class="section about-grid">
+        <article class="glass-panel about-panel">
+          <p class="section-kicker">Career Objective</p>
+          <h2>Engineering useful products while sharpening fundamentals.</h2>
+          <p>
+            I want to contribute to meaningful software projects in collaborative teams, applying
+            strong coding fundamentals, problem-solving, and curiosity for technology. I care about
+            learning quickly, delivering dependable solutions, and improving with every build.
+          </p>
+        </article>
+        <div class="metric-stack">
+          <div class="metric-card">
+            <strong data-count="3">0</strong>
+            <span>Major projects</span>
+          </div>
+          <div class="metric-card">
+            <strong data-count="13">0</strong>
+            <span>Core technologies</span>
+          </div>
+          <div class="metric-card">
+            <strong data-count="5">0</strong>
+            <span>Certifications</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work">
+        <div class="section-heading split">
+          <div>
+            <p class="section-kicker">Featured Builds</p>
+            <h2>Project case studies with real implementation scope.</h2>
+          </div>
+          <div class="project-controls">
+            <label class="project-search">
+              <span>Search</span>
+              <input id="projectSearch" type="search" placeholder="Search project, tech, feature..." />
+            </label>
+            <div class="filter-tabs" aria-label="Project filters">
+              <button class="active" type="button" data-filter="all">All</button>
+              <button type="button" data-filter="fullstack">Full Stack</button>
+              <button type="button" data-filter="ml">ML</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured" data-category="fullstack">
+            <div class="project-visual java-visual">
+              <span>CRUD</span>
+              <span>REST</span>
+              <span>DB</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Java Full Stack</span>
+                <span>Jan 2025 - Feb 2025</span>
+              </div>
+              <h3>Online Student Management System</h3>
+              <p>
+                Admin-focused platform to add, update, delete, view, and search student records with
+                course and fee management.
+              </p>
+              <div class="tech-row">
+                <span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>MySQL</span>
+              </div>
+              <div class="project-stats">
+                <span>Admin</span><span>CRUD</span><span>Secure Login</span>
+              </div>
+              <button class="case-button" type="button" data-project="student">View Case Study</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ml">
+            <div class="project-visual ml-visual">
+              <span>Model</span>
+              <span>Data</span>
+              <span>Charts</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Machine Learning</span>
+                <span>Jan 2024 - Jun 2024</span>
+              </div>
+              <h3>Smart Traffic Management System</h3>
+              <p>
+                Logistic regression based prototype for traffic analysis using Python data science
+                libraries and Google Colab.
+              </p>
+              <div class="tech-row">
+                <span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Matplotlib</span>
+              </div>
+              <div class="project-stats">
+                <span>Model</span><span>Charts</span><span>Colab</span>
+              </div>
+              <button class="case-button" type="button" data-project="traffic">View Case Study</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="fullstack">
+            <div class="project-visual mern-visual">
+              <span>Auth</span>
+              <span>Cart</span>
+              <span>Orders</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>MERN Stack</span>
+                <span>Full Stack</span>
+              </div>
+              <h3>E-Commerce Website</h3>
+              <p>
+                Shopping application with product browsing, login, cart, order history, responsive
+                UI, and simulated checkout.
+              </p>
+              <div class="tech-row">
+                <span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span>
+              </div>
+              <div class="project-stats">
+                <span>Auth</span><span>Cart</span><span>Checkout</span>
+              </div>
+              <button class="case-button" type="button" data-project="commerce">View Case Study</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="comparison-panel">
+          <div class="section-heading">
+            <p class="section-kicker">Project Snapshot</p>
+            <h2>Quick comparison for recruiters and collaborators.</h2>
+          </div>
+          <div class="comparison-table" role="table" aria-label="Project comparison">
+            <div role="row">
+              <strong role="columnheader">Project</strong>
+              <strong role="columnheader">Stack</strong>
+              <strong role="columnheader">Core Value</strong>
+              <strong role="columnheader">Status</strong>
+            </div>
+            <div role="row">
+              <span>Student Management</span>
+              <span>Java, Spring Boot, MySQL</span>
+              <span>Admin CRUD + secure records</span>
+              <span>Case study ready</span>
+            </div>
+            <div role="row">
+              <span>Smart Traffic</span>
+              <span>Python, scikit-learn, Pandas</span>
+              <span>ML prediction prototype</span>
+              <span>Colab ready</span>
+            </div>
+            <div role="row">
+              <span>E-Commerce</span>
+              <span>MERN Stack</span>
+              <span>Auth, cart, checkout flow</span>
+              <span>Full-stack build</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stack-section" id="stack">
+        <div class="section-heading">
+          <p class="section-kicker">Engineering Stack</p>
+          <h2>Balanced across backend, frontend, database, and applied ML.</h2>
+        </div>
+        <div class="stack-grid">
+          <article class="skill-meter">
+            <div><span>Java / Spring Boot</span><strong>82%</strong></div>
+            <progress value="82" max="100"></progress>
+          </article>
+          <article class="skill-meter">
+            <div><span>HTML / CSS / JavaScript</span><strong>86%</strong></div>
+            <progress value="86" max="100"></progress>
+          </article>
+          <article class="skill-meter">
+            <div><span>MERN Stack</span><strong>74%</strong></div>
+            <progress value="74" max="100"></progress>
+          </article>
+          <article class="skill-meter">
+            <div><span>Python / ML Basics</span><strong>68%</strong></div>
+            <progress value="68" max="100"></progress>
+          </article>
+          <article class="skill-meter">
+            <div><span>MySQL / Data Modeling</span><strong>72%</strong></div>
+            <progress value="72" max="100"></progress>
+          </article>
+          <article class="skill-meter">
+            <div><span>Git / GitHub Workflow</span><strong>78%</strong></div>
+            <progress value="78" max="100"></progress>
+          </article>
+        </div>
+        <div class="tool-cloud">
+          <span>C++</span><span>Java</span><span>Python</span><span>HTML</span><span>CSS</span>
+          <span>JavaScript</span><span>React</span><span>Node.js</span><span>Express.js</span>
+          <span>MongoDB</span><span>MySQL</span><span>VS Code</span><span>Google Colab</span>
+          <span>NumPy</span><span>Pandas</span><span>Matplotlib</span>
+        </div>
+        <div class="skill-radar-panel">
+          <div>
+            <p class="section-kicker">Skill Radar</p>
+            <h3>Profile shape across core development areas.</h3>
+            <p>
+              A visual snapshot of current strengths across backend, frontend, database,
+              full-stack execution, machine learning basics, and workflow discipline.
+            </p>
+          </div>
+          <canvas id="skillRadar" width="520" height="360" aria-label="Skill radar chart"></canvas>
+        </div>
+      </section>
+
+      <section class="section journey-section" id="journey">
+        <div class="section-heading split">
+          <div>
+            <p class="section-kicker">Journey</p>
+            <h2>Education, certifications, and personality signals.</h2>
+          </div>
+        </div>
+        <div class="journey-grid">
+          <div class="timeline">
+            <article>
+              <span>2023 - 2027</span>
+              <h3>Bachelor of Engineering, Computer Science & Engineering</h3>
+              <p>Chandigarh University, Mohali</p>
+            </article>
+            <article>
+              <span>2021 - 2023</span>
+              <h3>Intermediate</h3>
+              <p>GMLS High School, Chainpur</p>
+            </article>
+            <article>
+              <span>2020</span>
+              <h3>Matriculation</h3>
+              <p>GMLS High School, Chainpur</p>
+            </article>
+          </div>
+          <div class="credential-board">
+            <article>
+              <h3>Certifications</h3>
+              <ul>
+                <li>Design Thinking - LinkedIn</li>
+                <li>Foundations of Project Management - Google, Coursera</li>
+                <li>Microcontroller and Industrial Applications - L&T</li>
+                <li>Beginning Python - LinkedIn</li>
+                <li>Cloud Computing - NPTEL</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Soft Skills</h3>
+              <div class="mini-tags">
+                <span>Patience</span><span>Teamwork</span><span>Adaptability</span>
+                <span>Problem Solving</span><span>Time Management</span><span>Critical Thinking</span>
+              </div>
+            </article>
+            <article>
+              <h3>Interests</h3>
+              <p>Coding, online gaming, reading, travel, badminton, movies, writing, yoga, and meditation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section interview-section" id="interview">
+        <div class="section-heading split">
+          <div>
+            <p class="section-kicker">Interview Mode</p>
+            <h2>Quick answers recruiters usually look for.</h2>
+          </div>
+          <a class="button secondary" href="#contact">Discuss Opportunity</a>
+        </div>
+        <div class="accordion-list">
+          <article class="accordion-item open">
+            <button type="button" class="accordion-trigger" aria-expanded="true">
+              Why should a team consider me?
+              <span>+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>
+                I bring strong learning speed, practical project experience, and a balanced stack
+                across Java backend, web interfaces, databases, and ML basics. I focus on building
+                working features, then improving structure and usability.
+              </p>
+            </div>
+          </article>
+          <article class="accordion-item">
+            <button type="button" class="accordion-trigger" aria-expanded="false">
+              What kind of work fits me best?
+              <span>+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>
+                Internship or junior project work involving Spring Boot APIs, CRUD systems, admin
+                dashboards, React interfaces, MERN applications, MySQL workflows, and Python data
+                experiments.
+              </p>
+            </div>
+          </article>
+          <article class="accordion-item">
+            <button type="button" class="accordion-trigger" aria-expanded="false">
+              What am I improving next?
+              <span>+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>
+                I am strengthening system design basics, authentication flows, deployment, testing,
+                API documentation, and cleaner frontend component architecture.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Let us build something practical, useful, and polished.</h2>
+          <p>
+            Available for internships, full-stack projects, learning opportunities, and technical
+            collaborations.
+          </p>
+          <div class="contact-inline">
+            <button class="copy-email" id="copyEmail" type="button">Copy Email</button>
+            <span id="copyStatus" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <a
+            class="button primary"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=amarkumar62156@gmail.com&su=Portfolio%20Contact%20-%20Amar%20Kumar"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Email Me
+          </a>
+          <a class="button secondary" href="tel:+919199320433">+91 9199320433</a>
+          <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>
+            Your Name
+            <input name="name" type="text" placeholder="Enter your name" required />
+          </label>
+          <label>
+            Your Email
+            <input name="email" type="email" placeholder="Enter your email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell me about the opportunity" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Open Gmail With Message</button>
+        </form>
+      </section>
+    </main>
+
+    <aside class="floating-dock" aria-label="Quick links">
+      <a href="#home">Home</a>
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Mail</a>
+    </aside>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">Top</button>
+
+    <div class="command-overlay" id="commandOverlay" aria-hidden="true">
+      <div class="command-panel" role="dialog" aria-modal="true" aria-label="Command palette">
+        <input id="commandInput" type="search" placeholder="Search sections, projects, skills..." />
+        <div class="command-list" id="commandList"></div>
+      </div>
+    </div>
+
+    <div class="case-modal" id="caseModal" aria-hidden="true">
+      <div class="case-dialog" role="dialog" aria-modal="true" aria-label="Project case study">
+        <button class="modal-close" id="modalClose" type="button" aria-label="Close project case study">Close</button>
+        <div id="caseContent"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Amar Kumar. Designed as an advanced developer portfolio.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
