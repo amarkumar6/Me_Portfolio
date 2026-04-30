@@ -2,6 +2,10 @@
 
 Welcome to my advanced developer portfolio! This is a modern, interactive web-based portfolio showcasing my skills, projects, and professional journey in software development.
 
+## 🌐 Live Demo
+
+**[View Live Portfolio →](https://me-portfolio-vert.vercel.app/)**
+
 ## 🚀 Features
 
 - **Responsive Design** - Optimized for all devices and screen sizes
